@@ -19,7 +19,7 @@ const NavItem = ({name}) => {
 
 const Header = () => {
   return (
-    <section>
+    <section className="sticky top-0 left-0 right-0 z-50 bg-white">
       <header className="container mx-auto px-10 py-5 flex justify-between items-center">
         <div>
           <img src={images.Logo} alt="logo" />
@@ -31,8 +31,8 @@ const Header = () => {
               <NavItem key={item.name} name={item.name} />
             ))}
           </ul>
-          
-          <button className="border-2 border-forth px-6 py-2 rounded-full text-fourth font-semibold hover:bg-fourth hover:text-first ">
+
+          <button className="border-2 border-fourth px-6 py-2 rounded-full text-fourth font-semibold hover:bg-fourth hover:text-first ">
             Sign in
           </button>
         </div>
