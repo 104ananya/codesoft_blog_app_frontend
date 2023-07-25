@@ -8,10 +8,12 @@ const Hero = () => {
     <section className="container mx-auto flex flex-col px-5 py-5 lg:flex-row">
       <div className="mt-10 lg:w-1/2">
         <h1 className="font-roboto text-3xl text-center font-bold text-fourth md:text-5xl lg:text-4xl xl:text-5xl lg:text-left lg:max-w-[540px]">
-          Read the most interesting articles
+           Discover stories, thinking, and expertise.
         </h1>
         <p className="text-black mt-4 text-center md:text-xl lg:text-base xl:text-xl lg:text-left">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sapiente tenetur doloribus perspiciatis! Dolorem vero quas, dicta laboriosam dolor amet unde aperiam quam.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          sapiente tenetur doloribus perspiciatis! Dolorem vero quas, dicta
+          laboriosam dolor amet unde aperiam quam.
         </p>
 
         <div className="flex flex-col gap-y-2.5 mt-10 lg:mt-6 xl:mt-10 relative">
@@ -23,22 +25,36 @@ const Hero = () => {
               placeholder="Search Blogs"
             />
           </div>
-          <button className="w-full bg-third text-white font-semibold rounded-lg px-5 py-3 md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2 md:w-fit md:py-2">Search</button>
+          <button className="w-full bg-third text-white font-semibold rounded-lg px-5 py-3 md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2 md:w-fit md:py-2">
+            Search
+          </button>
         </div>
 
-
         <div className="flex mt-4 flex-col lg:flex-row lg:items-start lg:flex-nowrap lg:gap-x-4 lg:mt-7">
-          <span className="text-dark-light font-semibold italic mt-2 lg:mt-4 lg:text-sm xl:text-base">Popular Tags</span>
+          <span className="text-dark-light font-semibold italic mt-2 lg:mt-4 lg:text-sm xl:text-base">
+            Popular Tags
+          </span>
           <ul className="flex flex-wrap gap-x-2.5 gap-y-2.5 mt-3 lg:text-sm xl:text-base">
-            <li  className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic ">Design</li>
-            <li className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic">User Experience</li>
-            <li className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic">Web Development</li>
+            <li className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic ">
+              Design
+            </li>
+            <li className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic">
+              User Experience
+            </li>
+            <li className="rounded-lg bg-second bg-opacity-10 px-3 py-1.5 text-second font-semibold italic">
+              Web Development
+            </li>
           </ul>
         </div>
       </div>
 
-      <div>
-        <img src={images.HeroImg} alt="user" className="h-[600px] w-[700px]" />
+      <div className=" lg:block lg:1/2">
+        <img
+          // className="w-full"
+          src={images.HeroImg}
+          alt="user"
+          className="h-[600px] w-[700px]"
+        />
       </div>
     </section>
   );
